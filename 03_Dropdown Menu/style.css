@@ -1,0 +1,72 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/*   Nav Bar   */
+
+#navBar{
+    background-color: rgb(36, 36, 36);
+}
+
+.navElements{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.navElements > li{
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+}
+
+.navElements > li a{
+    display: inline-block;
+    padding: 10px 10px;
+    margin: 2px;
+}
+
+.navElements > li:hover{
+    background-color:rgb(76, 76, 76);
+}
+
+
+
+/*    Nav Bar - Dropdown List    */
+
+.dropdown-content{
+    display: none;
+}
+
+.dropdown-content > ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: rgb(36, 36, 36);
+    border-radius: 0 0 10px 10px;
+}
+
+.dropdown-content > ul > li{
+    display: block;
+    padding: 5px 27px;
+}
+
+.dropdown-content > ul > li:hover{
+    background-color: rgb(127, 255, 131);
+    color: black;
+}
+
+#last:hover{
+    background-color: rgb(127, 255, 131);
+    color: black;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+    z-index: 1;
+    position: absolute;
+}
